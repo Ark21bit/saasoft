@@ -1,14 +1,13 @@
-import { defineConfig, transformerVariantGroup, transformerDirectives } from 'unocss'
-import presetWind4 from '@unocss/preset-wind4'
+import { defineConfig, transformerVariantGroup, transformerDirectives, presetWind4 } from 'unocss'
+
 export default defineConfig({
 	// ...UnoCSS options
 	presets: [
-		presetWind4(),
+		presetWind4()
 	],
-
 	transformers: [
 		transformerVariantGroup(),
-		transformerDirectives()
+		transformerDirectives(),
 	],
 	content: {
 		pipeline: {
